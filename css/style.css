@@ -1,0 +1,160 @@
+:root {
+  --main-color: #ef6604;
+  --second-color: #2a2c39;
+  --grey-color: #aaaaaa;
+  --dark-grey: #444444;
+  --white: #ffffff;
+}
+
+/*Global Styles*/
+html {
+  font-size: 62.5%;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  max-width: 1140px;
+  margin: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+h2 {
+  font-size: 4.8rem;
+}
+
+h3 {
+  font-size: 2.6rem;
+}
+
+h4 {
+  font-size: 1.8rem;
+}
+
+p,
+a {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  color: var(--second-color);
+}
+
+button {
+  padding: 10px 24px;
+}
+
+/* Header and Navbar section */
+header {
+  height: 80vh;
+  background: var(--second-color);
+  position: relative;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 60px;
+  height: 8vh;
+}
+
+#logo a {
+  font-size: 26px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  color: var(--white);
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  width: 60%;
+}
+
+.nav-links a {
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  color: var(--white);
+}
+
+.sub-menu-1,
+.sub-menu-2 {
+  display: none;
+  text-align: left;
+}
+
+.sub-menu-1 ul {
+  list-style: none;
+  padding-inline-start: 0px;
+}
+
+.sub-menu-1 ul li a {
+  color: var(--second-color);
+}
+
+.sub-menu-1 ul li a:hover {
+  color: var(--main-color);
+}
+
+.sub-menu-1 ul li {
+  padding: 10px;
+}
+
+.nav-links li:hover .sub-menu-1 {
+  display: block;
+  position: absolute;
+  margin-left: -25px;
+  background: var(--white);
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.sub-menu-1 li:hover .sub-menu-2 {
+  display: block;
+  position: absolute;
+  margin-left: 100px;
+  margin-top: 0px;
+  background: var(--white);
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.hero-slider {
+    text-align: center;
+    color: var(--white);
+    margin-top: 7rem;
+}
+
+.hero-item {
+    max-width: 70%;
+    margin: auto;
+}
+
+.hero-item p {
+    color: var(--white);
+}
+
+.owl-dots {
+    display: none;
+}
+
+
+.owl-nav span{
+    font-size: 50px;
+}
